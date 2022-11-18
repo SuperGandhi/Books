@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('slug');
+            $table->text('description');
+            $table->string('author');
+            $table->integer('price');
             $table->timestamps();
         });
     }
