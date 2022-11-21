@@ -9,7 +9,9 @@
                     <div class="col-md-4">
                         <div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title text-center mb-3">{{  $book->name }} </h5>
+                                <h5 class="card-title text-center mb-3">
+                                    <a href="{{ route('books.show', $book->id) }}" class="link-danger">{{ $book->name }}</a>
+                                </h5>
                                 <p class="card-text text-muted">{{ $book->description }}</p>
                             </div>
 
